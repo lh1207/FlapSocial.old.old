@@ -57,8 +57,8 @@ public class Post {
         return "Post{" +
                 "postId=" + postId +
                 ", userId=" + userId +
-                ", email='" + caption + '\'' +
-                ", profilePic='" + description + '\'' +
+                ", caption='" + caption + '\'' +
+                ", description='" + description + '\'' +
                 '}';
     }
 
@@ -86,7 +86,7 @@ public class Post {
 
     // main
     public static void main(String[] args) {
-        Post post = new Post(1, 1, "email", "profilePic");
+        Post post = new Post(1, 1, "caption", "description");
         System.out.println(post);
     }
 }
