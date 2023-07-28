@@ -28,24 +28,24 @@ public class PostTest {
     @Test
     public void testGetEmail() {
         Post post = new Post(1, 1, "email", "profilePic");
-        Assertions.assertEquals("email", post.getEmail());
+        Assertions.assertEquals("email", post.getCaption());
     }
     @Test
     public void testSetEmail() {
         Post post = new Post(1, 1, "email", "profilePic");
-        post.setEmail("newEmail");
-        Assertions.assertEquals("newEmail", post.getEmail());
+        post.setCaption("newEmail");
+        Assertions.assertEquals("newEmail", post.getCaption());
     }
     @Test
     public void testGetProfilePic() {
         Post post = new Post(1, 1, "email", "profilePic");
-        Assertions.assertEquals("profilePic", post.getProfilePic());
+        Assertions.assertEquals("profilePic", post.getDescription());
     }
     @Test
     public void testSetProfilePic() {
         Post post = new Post(1, 1, "email", "profilePic");
-        post.setProfilePic("newProfilePic");
-        Assertions.assertEquals("newProfilePic", post.getProfilePic());
+        post.setDescription("newProfilePic");
+        Assertions.assertEquals("newProfilePic", post.getDescription());
     }
     @Test
     public void testEquals() {
