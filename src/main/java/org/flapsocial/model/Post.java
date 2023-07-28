@@ -7,38 +7,38 @@ public class Post {
     String email;
     String profilePic;
 
-    int postId() {
+    public int getPostId() {
         return postId;
     }
 
-    Post postId(int postId) {
+    public Post setPostId(int postId) {
         this.postId = postId;
         return this;
     }
 
-    int userId() {
+    public int getUserId() {
         return userId;
     }
 
-    Post userId(int userId) {
+    public Post setUserId(int userId) {
         this.userId = userId;
         return this;
     }
 
-    String email() {
+    public String getEmail() {
         return email;
     }
 
-    Post email(String email) {
+    public Post setEmail(String email) {
         this.email = email;
         return this;
     }
 
-    String profilePic() {
+    public String getProfilePic() {
         return profilePic;
     }
 
-    Post profilePic(String profilePic) {
+    public Post setProfilePic(String profilePic) {
         this.profilePic = profilePic;
         return this;
     }
@@ -66,9 +66,7 @@ public class Post {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Post)) return false;
-
-        Post post = (Post) o;
+        if (!(o instanceof Post post)) return false;
 
         if (postId != post.postId) return false;
         if (userId != post.userId) return false;
