@@ -1,5 +1,5 @@
 package org.flapsocial.model;
-public abstract class BaseEntity {
+public class BaseEntity {
     protected int userId;
     public int getUserId() {
         return userId;
